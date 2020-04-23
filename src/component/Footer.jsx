@@ -8,10 +8,8 @@ export default class Footer extends Component {
                 <p>
                     By
                     <a href={infos.links.linkedin} target="_blank" rel="author noopener noreferrer "> {infos.nom} </a>
-                    <i className="fas fa-copyright"></i>{new Date().getFullYear()}
-                    <i className="far fa-copyright"></i>
+                    <i className="far fa-copyright"></i>{new Date().getFullYear()}
                 </p>
-
                 </footer>
             </Fragment>
         )
