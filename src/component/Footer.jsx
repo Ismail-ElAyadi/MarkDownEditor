@@ -1,9 +1,8 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component} from 'react'
 import infos from '../variableInformations/Infos'
 export default class Footer extends Component {
     render() {
         return (
-            <Fragment>
                 <footer className="col-12 bg-warning">
                 <p>
                     By
@@ -11,7 +10,6 @@ export default class Footer extends Component {
                     <i className="far fa-copyright"></i>{new Date().getFullYear()}
                 </p>
                 </footer>
-            </Fragment>
         )
     }
 }
