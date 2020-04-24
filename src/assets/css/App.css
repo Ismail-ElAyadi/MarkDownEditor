@@ -1,4 +1,25 @@
 li {
   list-style: none;
 }
+
+textarea {
+  resize: vertical;
+  min-height: 75vh;
+  max-height: 80vh;
+}
+
+.block {
+  margin: 0 auto !important;
+}
+
+footer {
+  position: fixed !important;
+  bottom: 0 !important;
+  border: solid 3px black;
+}
+
+html, body, #root {
+  position: relative;
+  height: 100% !important;
+}
 /*# sourceMappingURL=App.css.map */
