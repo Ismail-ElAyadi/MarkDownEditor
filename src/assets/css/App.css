@@ -3,9 +3,8 @@ li {
 }
 
 textarea {
-  resize: vertical;
-  min-height: 75vh;
-  max-height: 80vh;
+  resize: none !important;
+  border: 1px black solid;
 }
 
 .block {
@@ -13,13 +12,20 @@ textarea {
 }
 
 footer {
-  position: fixed !important;
-  bottom: 0 !important;
   border: solid 3px black;
 }
 
 html, body, #root {
-  position: relative;
   height: 100% !important;
+}
+
+.preview {
+  border: 1px solid blue;
+  display: block !important;
+  height: 100% !important;
+}
+
+section {
+  height: 90% !important;
 }
 /*# sourceMappingURL=App.css.map */

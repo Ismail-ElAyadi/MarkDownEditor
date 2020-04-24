@@ -7,14 +7,15 @@ export default class Body extends Component {
         <div className="col-md-5  block">
           <h2>Editor</h2>
           <textarea
-            className="col-md-12 "
+            className="col-md-12 preview " rows="3"
           ></textarea>
         </div>
         <div className="col-md-5 block ">
           <h2>Preview</h2>
-          <textarea
-            className="col-md-12"
-          ></textarea>
+          <div
+            className="col-md-12 preview"
+          >
+          </div>
         </div>
       </section>
     );
