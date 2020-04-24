@@ -2,21 +2,19 @@ li {
   list-style: none;
 }
 
-textarea {
-  resize: none !important;
-  border: 1px black solid;
-}
-
 .block {
   margin: 0 auto !important;
 }
 
 footer {
+  position: fixed !important;
+  bottom: 0 !important;
   border: solid 3px black;
 }
 
 html, body, #root {
-  height: 100% !important;
+  position: relative;
+  height: 90% !important;
 }
 
 .preview {
@@ -26,6 +24,6 @@ html, body, #root {
 }
 
 section {
-  height: 90% !important;
+  height: 100% !important;
 }
 /*# sourceMappingURL=App.css.map */
