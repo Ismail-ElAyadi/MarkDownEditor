@@ -7,7 +7,6 @@ li{
 footer{
     position:fixed !important;
     bottom:0 !important;
-    border:solid 3px black;
 }
 html, body , #root{
     position:relative;
@@ -28,3 +27,10 @@ html, body , #root{
 section{
     height:100% !important;
 }
+svg {
+    height: 1rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+
+

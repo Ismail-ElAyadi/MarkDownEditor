@@ -15,12 +15,11 @@ export default class App extends Component {
   resetEditor=()=> this.setState({reseted: true})
   continueEditing=()=> this.setState({reseted: false})
 
-
   render() {
     const {documentation,reseted} = this.state
     return (
       <Fragment>
-        <Header displayDoc={this.displayDoc} resetEditor={this.resetEditor} />
+        <Header displayDoc={this.displayDoc} resetEditor={this.resetEditor} documentation={documentation}/>
         <Body doc={documentation} reseted={reseted} continueEditing ={this.continueEditing}/>
         <Footer/>
       </Fragment>

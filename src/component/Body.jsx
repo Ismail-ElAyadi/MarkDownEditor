@@ -10,16 +10,8 @@ export default class Body extends Component {
 
   componentDidMount(){
     let storage = localStorage.getItem("text")
-    if(storage){
-      this.setState({
-        text: storage
-      })
-    }else {
-      this.setState({
-        text:sampleText
-      })
-    }
-
+    if(storage)this.setState({text: storage})
+    else this.setState({text:sampleText })
   }
   componentDidUpdate(){
     localStorage.setItem("text",this.state.text)
