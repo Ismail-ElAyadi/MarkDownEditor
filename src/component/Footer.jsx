@@ -3,8 +3,8 @@ import infos from '../variableInformations/Infos'
 export default class Footer extends Component {
     render() {
         return (
-                <footer className="col-12 bg-warning">
-                    <p>Notice : let 2 spaces to go on the next line.</p>
+                <footer className="col-12 bg-warning d-flex justify-content-between">
+                    <p>Notice : Let 2 spaces to go on the next line.</p>
                 <p>
                     By
                     <a href={infos.links.linkedin} target="_blank" rel="author noopener noreferrer "> {infos.nom} </a>

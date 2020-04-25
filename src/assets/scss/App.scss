@@ -13,11 +13,19 @@ html, body , #root{
     position:relative;
     height: 90% !important;
 }
-.preview {
-border:1px solid blue;
-display: block !important;
-height: 100% !important;
+@mixin blockView {
+    border:1px solid black;
+    display: block !important;
+    height: 100% !important;
+
 }
+.preview,.editor {
+@include blockView()
+}
+.preview{
+    overflow-y: auto;
+}
+
 section{
     height:100% !important;
 }

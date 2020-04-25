@@ -17,10 +17,14 @@ html, body, #root {
   height: 90% !important;
 }
 
-.preview {
-  border: 1px solid blue;
+.preview, .editor {
+  border: 1px solid black;
   display: block !important;
   height: 100% !important;
+}
+
+.preview {
+  overflow-y: auto;
 }
 
 section {
