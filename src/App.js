@@ -15,6 +15,7 @@ export default class App extends Component {
   resetEditor=()=> this.setState({reseted: true})
   continueEditing=()=> this.setState({reseted: false})
 
+
   render() {
     const {documentation,reseted} = this.state
     return (
