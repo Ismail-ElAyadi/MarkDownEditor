@@ -7,7 +7,7 @@ A simple react app to create markdown files easily.
 * You can Copy your text to clipboard with one button.
 
 #### Preview
-![App's Preview](https://i.gyazo.com/963184b43cf0c92b4eb033232416da47.png)
+![App's Preview](https://i.gyazo.com/b7b6dcbec3e26f4fb8b670fad86d9def.png)
 
 
 #### Try it [HERE](https://adoring-kepler-fc22b6.netlify.app/) !
