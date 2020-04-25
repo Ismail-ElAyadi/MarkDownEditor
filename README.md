@@ -10,5 +10,5 @@ A simple react app to create markdown files easily.
 ![App's Preview](https://i.gyazo.com/b7b6dcbec3e26f4fb8b670fad86d9def.png)
 
 
-#### Try it [HERE](https://adoring-kepler-fc22b6.netlify.app/) !
+#### Try it [HERE](https://easymarkdown.netlify.app/) !
 
