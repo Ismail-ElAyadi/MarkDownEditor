@@ -28,6 +28,12 @@ export default class Body extends Component {
     return marked(text,{sanitize:true})
   }
 
+copyToClip() {
+    let copyText = document.getElementById("editor");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+  }
   render() {
     if(this.props.reseted){
       this.setState({text:sampleText})
@@ -52,7 +58,10 @@ export default class Body extends Component {
 
       <section className="p-0 d-flex">
         <div className="col-md-5  block">
-          <h2>Editor</h2>
+         <div className="d-flex col-md-12">
+            <h2 className="col-md-8">Editor</h2>
+            <button className="btn btn-outline-success col-md-4 m-2" onClick={this.copyToClip}>Copy to clipboard</button>
+         </div>
           <textarea id="editor"
             className="col-md-12 editor"
             onChange={this.textEdited}
