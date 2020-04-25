@@ -17,7 +17,6 @@ html, body , #root{
     border:1px solid black;
     display: block !important;
     height: 100% !important;
-
 }
 .preview,.editor {
 @include blockView()
