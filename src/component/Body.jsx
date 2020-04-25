@@ -1,19 +1,29 @@
 import React, { Component } from "react";
 import {sampleText} from '../variableInformations/sampleText.js'
 import marked from 'marked';
+
 export default class Body extends Component {
+
   state={
-    text: sampleText,
+    text: sampleText
   }
   textEdited =(e)=> {
     this.setState({
       text:e.target.value,
     })
   }
+  eventOnChangeTextArea =()=> {
+    this.textEdited();
+  }
   renderText=text=> {
     return marked(text,{sanitize:true})
   }
+
   render() {
+    if(this.props.reseted){
+      this.setState({text:sampleText})
+      this.props.continueEditing()
+    }
     let {text} = this.state
     let preview =
     <div className="col-md-5 block">
@@ -30,14 +40,16 @@ export default class Body extends Component {
     </div>
 
     return (
+
       <section className="p-0 d-flex">
         <div className="col-md-5  block">
           <h2>Editor</h2>
           <textarea id="editor"
             className="col-md-12 editor"
-            onInput={this.textEdited}
+            onChange={this.textEdited}
             value={text}
           >
+
           </textarea>
         </div>
         {this.props.doc ? iframeDocumentation : preview}
