@@ -51,7 +51,7 @@ copyToClip() {
     let iframeDocumentation =
     <div className="col-md-5 block">
     <h2>Documentation</h2>
-    <iframe id="documentation" className="col-md-12 preview" title="Markdown's Documentation" src="https://guides.github.com/features/mastering-markdown/"></iframe>
+    <iframe id="documentation" className="col-md-12 preview" title="Markdown's Documentation" src="https://docs.framasoft.org/fr/grav/markdown.html"></iframe>
     </div>
 
     return (
